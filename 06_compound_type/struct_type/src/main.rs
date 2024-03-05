@@ -47,9 +47,17 @@ fn update_struct() {
     // println!("User email: {}", user1.username);
 }
 
+fn tuple_struct() {
+    struct Color(i32, i32, i32);
+    struct Point(i32, i32, i32);
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+}
+
 fn main() {
     // create_user();
     // create_mut_user();
     // build_user(String::from("build@mail.com"), String::from("name"));
-    update_struct();
+    // update_struct();
+    tuple_struct();
 }
